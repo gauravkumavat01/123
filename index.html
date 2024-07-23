@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foxcode Tecnololgies</title>
+    
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+
+
+}
+.logo{
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+
+.navbar a{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+
+}
+
+.contact{
+    padding: 10px 28px;
+   
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.home{
+    width:100%;
+    min-height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.home-content{
+    max-width: 800px;
+}
+.home-content h3{
+    font-size: 32px;
+}
+.home-content h1{
+    font-size: 52px;
+    line-height: 1.2;
+}
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+
+}
+.btn-box{
+    width: 345px;
+    display: flex;
+    gap: 2em;
+
+}
+.btn-1{
+    padding: 15px 28px;
+    
+    color:black;
+    border: 2px solid  black;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+    
+    }
+    
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3% 2%;
+    gap: 10em;
+    background: white;
+}
+.about-content h2{
+    text-align: left;
+    color: black;
+    font-size: 42px;
+
+}
+.about-content h3{
+    font-size: 62px;
+    color: black
+}
+.about-content p{
+    color: black;
+    font-size: 20px;
+    margin: 2em 0 3em;
+
+}
+.contact-form h2{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input,
+.contact-form form textarea{
+    width: 100%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background: rgb(241, 241, 241);
+    border-radius: 0.8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+.services-content {
+    padding: 80px 12%; /* Adjust padding as needed */
+    margin-top: 60px; /* Add margin to create space from above content */
+    background-color: #f5f5f5; /* Optional: Add a background color for better contrast */
+}
+
+.xyz {
+    margin-bottom: 40px; /* Add margin between each service item */
+    padding: 30px; /* Add padding inside each service item */
+    background-color: #ffffff; /* Optional: Add a background color for each service item */
+    border-radius: 8px; /* Optional: Add border radius for a card-like appearance */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow for depth */
+}
+
+.xyz a {
+    display: block;
+    text-align: center;
+    font-size: 36px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.acb1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.abc2 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666666;
+}
+
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 40px 0;
+    
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: black;
+}
+.footer .social a{
+    font-size: 24px;
+    color: black;
+   
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    
+
+}
+.footer .social a:hover{
+    transform: scale(1.2)translate(-10px);
+    
+}
+.footer ul{
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: black;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.footer ul li a:hover{
+   
+}
+.footer ul li{
+    display:inline-block;
+    padding: 0 15px;
+
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: black;
+}
+    </style>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header class="header">
+       
+        <a href="#" class="logo"><span>Fox</span>Code</a>
+        <nav class="navbar">
+            <a href="#" class="active" >Home</a>
+            <a href="#" >About</a>
+            <a href="#" >Gallery</a>
+            <a href="#" >Services</a>
+    
+            </nav>
+            <a href="#" class="contact">Contact Us</a>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Welcome to Foxcode Tecnologies</h3>
+
+            <h1>We <Span>write Code</Span>and We handle the Rest.</h1>
+
+            <p>Client-focused, customer-centric, creating website solutions that deliver tangible business results, Foxcode's web developers helps brands the ever-changing digital landscape.</p>
+            <div class="btn-box">
+                <button class="btn-1">Discoiver</button>
+            </div>
+        </div>
+        <div class="img-box">
+            <img src="223c659221c63ebeb9e4fb0588fc4536.png" alt="Foxcode">
+        </div>
+    </section>
+    <section class="about">
+        <div class="about-img">
+            <img src="1.png" alt="about">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">Ab<span>out</span></h2>
+            <h3>Foxcode <span>Tecnololgies</span></h3>
+            <p>We're passionate about offering some of the best business growth services for startups</p>
+            <a href="#" class="btn-1">More</a>
+        </div>
+    </section>
+    <section class="services-content">
+        <h1 class="abc">Our Best Services</h1>
+        <p class="abcd">We serve small and medium sized companies in all tech related industries with high quality growth services which are presented below</p>
+        <Div class="xyz">
+            <a href="#"><i class='bx bxl-microsoft'></i></a>
+            <h3 class="acb1">Software Engineering</h3>
+            <p class="abc2">A growing number of companies integrate specialized applications into their computer systems, which allows adding value to daily operations and to do business in a more time- and cost-effective way. Backed up with a two-decade-long experience in software engineering, We allows for a wide variety of businesses, from small- and big-sized organizations to startups, go digital.</p>
+
+        </Div>
+        <Div class="xyz">
+            <a href="#"><i class='bx bxl-android'></i></i></a>
+            <h3 class="acb1">Android App Development </h3>
+            <p class="abc2">Foxcode Technologies provides startups, SMBs, and companies with Android app development services. Our developers of Android apps have years of experience in designing mobile apps that are custom, stable, fully functional, and futuristic for the entire range of Android devices. We are also looking to work with iOS Devices</p>
+            
+        </Div>
+        <Div class="xyz">
+            <a href="#"><i class='bx bxs-devices'></i></a>
+            <h3 class="acb1">Web Design & Development</h3>
+            <p class="abc2">Web development services imply designing, building, integrating, scaling and maintaining software that work via intranet or internet. Foxcode Technologies delivers highly available, functional and visually engaging web products and both platform-based and custom web solutions for enterprises.</p>
+            
+        </Div>
+        <Div class="xyz">
+            <a href="#"><i class='bx bx-store-alt'></i></a>
+            <h3 class="acb1">Social Media Marketing</h3>
+            <p class="abc2">Foxcode Technologies Internet Marketing Agency is a dynamic, versatile and full-service digital marketing agency that doesn’t rely on smoke and mirrors to attract new clients. Instead, Foxcode Technologies trusts its own search engine optimization (SEO) and marketing skills to drive new customers to our website.</p>
+            
+        </Div>
+        <Div class="xyz">
+            <a href="#"><i class='bx bxl-graphql'></i></a>
+            <h3 class="acb1">Graphic Design</h3>
+            <p class="abc2">We eat with our eyes first. We decide to read a book based on its cover. We discover attraction based on appearance. What is visual makes an impact. Your visual resources make an impact. Why not leverage them in your favor? Create a beautiful brand that is uniquely you and consistent across print and web design.</p>
+            
+        </Div>
+        <Div class="xyz">
+            <a href="#"><i class='bx bxs-quote-left'></i></a>
+            <h3 class="acb1">E-learning</h3>
+            <p class="abc2">Here at Learning Light Ltd, we offer a range of expert elearning services to help you transform training and development within your organisation.We teach different courses on different Technologies like Python, Java, Android and also include mobile and computer hardware repairing</p>
+            
+        </Div>
+    </section>
+    <section class="contact-form">
+        <h2 class="contect">Contect <span>Us</span></h2>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mob Number">
+                <input type="text" placeholder="Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10 " placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn-1">
+        </form>
+    </section>
+    <footer class="footer">
+        <div class="social">
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            <a href="#"><i class='bx bxl-twitter' ></i></a>
+            <a href="#"><i class='bx bxl-instagram' ></i></a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="#">FAQ</a>
+            </li>
+            <li>
+                <a href="#">Services</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">Term & Comditiom Applied</p>
+    </footer>
+</body>
+</html>
